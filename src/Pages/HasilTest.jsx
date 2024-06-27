@@ -1,8 +1,9 @@
 import { useEffect, useState } from "react";
-import { useLocation } from "react-router-dom";
+import { useLocation, useNavigate } from "react-router-dom";
 import Result from "./Result";
 
 const AnalisisST30 = () => {
+  const navigate = useNavigate();
   const location = useLocation();
   const [Data, setData] = useState("");
   const [bakatValue, setBakatValue] = useState("");
@@ -259,6 +260,14 @@ const AnalisisST30 = () => {
         ) : (
           <p>Loading ...</p>
         )}
+      </div>
+      <div className="flex justify-center">
+        <button
+          className="p-2 w-3/4 bg-red-500 rounded-xl text-white"
+          onClick={() => navigate("/")}
+        >
+          Back to Home
+        </button>
       </div>
     </div>
   );
