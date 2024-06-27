@@ -101,7 +101,7 @@ const TestMinatBakat = () => {
               )}
             </div>
           </div>
-          <div className="mt-2 bg-yellow-100 border-4 border border-blue-300 p-2 rounded-lg">
+          <div className="mt-2 bg-yellow-100 border-4 border border-white p-2 rounded-lg">
             {Data.map((value) => (
               <div key={value.kode}>
                 <table>
